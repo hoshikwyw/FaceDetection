@@ -1,48 +1,52 @@
-Face Detection Project
-This project utilizes JavaScript to perform face detection, and it can identify age, gender, and emotion. It employs the face-api.js library, which is a powerful tool for performing face detection and recognition tasks directly in the browser with TensorFlow.js.
+# Face Detection Project
 
-Getting Started
-Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
+This project utilizes JavaScript to detect faces in images, showing age, gender, and emotion of each detected face.
 
-Prerequisites
-To run this project, you need a modern web browser that supports JavaScript and has TensorFlow.js capabilities. You will also need a local server to serve the files.
+## Requirements
 
-Installation
-Clone the repository to your local machine:
-bash
-Copy code
-git clone https://github.com/your-username/face-detection-project.git
-Navigate to the project directory:
-bash
-Copy code
-cd face-detection-project
-Start a local server. If you have Python installed, you can use the following command:
-bash
-Copy code
-python -m http.server
-Open your web browser and go to http://localhost:8000 (or whichever port your server is running on).
-Usage
-Upload an image by clicking on the "Upload Image" button.
-After uploading, the image will be displayed, and face detection will be performed.
-Age, gender, and emotion of detected faces will be shown below the image.
-Demo
-You can check out the live demo here.
+- Web browser with JavaScript enabled
+- Node.js
 
-Built With
-face-api.js - A JavaScript API for face detection and face recognition in the browser implemented on top of TensorFlow.js
-TensorFlow.js - A JavaScript library for training and deploying machine learning models in the browser and on Node.js
-Authors
-Your Name - Initial work
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
+## Installation
 
-Acknowledgments
-justadudewhohacks for creating the face-api.js library.
-TensorFlow.js Contributors for their incredible work on TensorFlow.js.
-Contributing
-Fork the repository (https://github.com/your-username/face-detection-project/fork)
-Create your feature branch (git checkout -b feature/YourFeature)
-Commit your changes (git commit -am 'Add some feature')
-Push to the branch (git push origin feature/YourFeature)
-Create a new Pull Request
-Feel free to contribute, report issues, or suggest improvements!
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your_username/face-detection.git
+
+2. Navigate to the project directory:
+ 
+    cd face-detection
+
+3. Install dependencies:
+ 
+    npm install
+
+##  Usage
+
+- To run the project, follow these steps:
+
+1. Start the server:
+node server.js
+
+2. Open your web browser and go to http://localhost:3000.
+3. Click on the "Choose File" button and select an image from your local machine.
+4. Click on the "Upload" button to upload the selected image.
+5. Wait for the image to be processed. The processed image will be displayed with faces marked, along with their age, gender, and emotion.
+
+## Contributing
+- Contributions are welcome. Please follow these steps:
+
+1. Fork the repository
+2. Create a new branch (git checkout -b feature)
+3. Make your changes
+4. Commit your changes (git commit -am 'Add new feature')
+5. Push to the branch (git push origin feature)
+6. Create a pull request
+
+## Credits
+- This project utilizes the following libraries:
+
+Face-API.js - Face recognition API for the browser built on top of TensorFlow.js
+
+## License
+MIT License
